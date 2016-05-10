@@ -1,4 +1,39 @@
+var year_clicked;
+var make_clicked;
 function doit(){
+    
+   
+    $('.filter_year').click(function(){
+        year_clicked=$(this).text();
+         document.getElementById("yearfilterdd").innerHTML=year_clicked;
+    });
+    
+    $('.filter_make').click(function(){
+        make_clicked=$(this).text();
+        document.getElementById("makefilterdd").innerHTML=make_clicked;
+    });
+    
+    $('#gofilter').click(function(){
+        var j;
+           for(j=1;j<6;j++)
+               {
+                                      document.getElementById('adBox'+j ).style.display="block";
+
+               }
+        var i;
+               for (i=1;i<6;i++)
+                   {
+                       var focus_year=$('#year'+i).text();
+                       var focus_make=$('#make'+i).text();
+                        if(focus_year==year_clicked && focus_make==make_clicked )
+                    {}   
+                    else{
+                            document.getElementById('adBox'+i).style.display="none";
+                            console.log('adBox'+i +'deleted');
+                   }
+                         }});
+    
+/*    
 $('.filter_year').click(function(){
            var j;
            for(j=1;j<6;j++)
@@ -19,7 +54,7 @@ $('.filter_year').click(function(){
                    {
                     var focus_year=$('#year'+i).text();
                     console.log(focus_year)   
-                    //if(focus_year.localeCompare(year_clicked)===-1)
+                    f(focus_year.localeCompare(year_clicked)===-1)
                    if(focus_year==year_clicked)
                     {}   
                     else{
@@ -61,7 +96,7 @@ $('.filter_year').click(function(){
                         }   
                    }
                 }
-       });
+       });*/
         
         
         
