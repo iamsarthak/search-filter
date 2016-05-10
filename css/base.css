@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding:0;
+    font: 15px arial, sans-serif;
+
+}
+body{
+    background-color: black;
+}
+.adBox{
+    display: flex;
+    flex-direction: column;
+    
+}
+#wrapper{
+    /*display: flex;
+    margin: 0 auto;
+    padding: 0 10px; */
+    padding:0 50px;
+    margin: 50px 50px;
+    background-color:azure;
+}
+
+#ads{
+    padding:50px;
+}
+img{
+    
+}
+
+.adBox{
+ margin: 10px;   
+}
+.header{
+
+}
+.row{
+    display: flex;
+}
+@media screen and (max-width: 720px) {
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+}
