@@ -2,7 +2,34 @@
     margin: 0;
     padding:0;
     font: 15px arial, sans-serif;
+    font-family: Helvetica;
 
+}
+#formap{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+}
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 50%;
+      margin: auto;
+  }
+.header{
+    text-align: center;
+    
+}
+.yeardiv,.year{
+    font-size: 10px;
+}
+.modeldiv,.model{
+    font-size: 10px;
+}
+.makediv,.make{
+    font-size: 10px;
+}
+.costdiv,.cost{
+    font-size: 10px;
 }
 body{
     background-color: black;
@@ -16,18 +43,33 @@ body{
     /*display: flex;
     margin: 0 auto;
     padding: 0 10px; */
-    padding:0 50px;
-    margin: 50px 50px;
+    
+    margin: 100px 50px;
     background-color:azure;
 }
-
+/*#row1{
+    display: flex;
+    margin:30px;
+    flex-wrap: wrap;
+}*/
 #ads{
     padding:50px;
 }
-img{
-    
+.caret{
+    padding: 0;
+    margin: 0;
 }
-
+img{
+ margin-bottom: 10px;   
+}
+#filterset{
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+#filterset button{
+    margin: 10px;
+}
 .adBox{
  margin: 10px;   
 }
@@ -41,5 +83,19 @@ img{
     .row{
         display: flex;
         flex-direction: column;
+    }
+    #filterset{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    #filterset button{
+        margin: 10px;
+    }
+    #formap{
+         display: flex;
+        flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
     }
 }
